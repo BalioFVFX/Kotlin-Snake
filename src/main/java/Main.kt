@@ -9,6 +9,7 @@ import util.LevelParser
 const val SLEEP_TIME = 3000L
 fun main() {
     val terminal = DefaultTerminalFactory().createTerminal()
+    terminal.enterPrivateMode()
 
     terminal.println(Constants.TAKE_FILE_NAME)
     terminal.flush()
@@ -38,6 +39,7 @@ fun main() {
         terminal.println(boardException.message ?: Constants.DEFAULT_ERROR_MESSAGE)
         Thread.sleep(SLEEP_TIME)
     } finally {
+        terminal.exitPrivateMode()
         terminal.close()
     }
 }
