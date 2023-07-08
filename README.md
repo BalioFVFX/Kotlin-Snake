@@ -1,5 +1,7 @@
 # Kotlin Snake 🐍
 
+![Preview](https://github.com/BalioFVFX/Kotlin-Snake/blob/master/media/preview.gif?raw=true)
+
 ### Technologies
 The Kotlin programming language and the Lanterna library which is used for printing on the terminal.
 
